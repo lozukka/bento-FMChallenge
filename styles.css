@@ -34,18 +34,18 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
+    background-color: var(--color-purple-100);
   }
 
 #cards {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
     width: 350px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
-
+/*CARD 1*/
 #card1 {
     margin: 1.5rem auto;
     background-color: var(--color-purple-500);
@@ -81,6 +81,57 @@ body {
     color: var(--color-white);
     margin-bottom: 2rem;
     font-size: 1.5rem;
+}
+
+/*CARD 2*/
+#card2 {
+    background-color: var(--color-white);
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#card2 img {
+    width: 320px;
+    height: auto;
+}
+
+#card2 h2 {
+    font-size: 24px;
+    line-height: 25px;
+}
+
+/*CARD 3*/
+#card3 {
+    background-color: var(--color-yellow-500);
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem;
+    
+}
+
+#card3 h2 {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+#card3 img {
+    width: 320px;
+    height: auto;
+    
 }
 
 /*
