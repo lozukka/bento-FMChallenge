@@ -34,7 +34,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    background-color: var(--color-purple-100);
+    background-color: rgba(245,245,245,255); 
   }
 
 #cards {
@@ -115,11 +115,9 @@ body {
     max-width: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     padding: 1rem;
-    
+    padding-bottom: 0;
 }
 
 #card3 h2 {
@@ -129,10 +127,167 @@ body {
 }
 
 #card3 img {
-    width: 320px;
+    width: 250px;
     height: auto;
+    margin-top: 1rem;
+}
+
+/*CARD 4*/
+
+#card4 {
+    background-color: var(--color-purple-100);
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+#card4 h2 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+#card4 p {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 1rem;
+    font-weight: 500;
+}
+
+/*CARD 5*/
+#card5 {
+    background-color: var(--color-purple-500);
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+#card5 h2 {
+    font-size: 33px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 1rem;
+    color: var(--color-white);
+}
+
+#card5 img {
+    width: 250px;
+    height: auto;
+    margin-top: 0.5rem;
+    align-self: center;
+}
+
+/*CARD 6*/
+
+#card6 {
+    background-color: var(--color-white);
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#card6 h2 {
+    font-size: 50px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+#card6 p {
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+#card6 img {
+    width: 160px;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+/*CARD 7*/
+
+#card7 {
+    background-color: var(--color-yellow-100);
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#card7 h2 {
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+#card7 i {
+    color: var(--color-purple-500);
+}
+
+#card7 img {
+    width: 200px;
+    height: auto;
+    margin-left: 1rem;
+}
+
+/*CARD 8*/
+
+#card8 {
+    background-color: var(--color-yellow-500);
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1.25rem;
+}
+
+#card8 h2 {
+    font-size: 27px;
+    line-height: 25px;
+    font-weight: 500;
     
 }
+
+#card8 img {
+    width: 205px;
+    height: auto;
+    margin-top: 1rem;
+}
+/*
+@media (min-width: 1440px) {
+    #cards {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}*/
 
 /*
 - Mobile: 375px
