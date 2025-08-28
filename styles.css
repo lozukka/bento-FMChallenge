@@ -43,14 +43,14 @@ body {
     width: 350px;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 /*CARD 1*/
 #card1 {
     margin: 1.5rem auto;
     background-color: var(--color-purple-500);
     width: 100%;
-    max-width: 350px;
+    /*max-width: 350px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,6 +58,13 @@ body {
     text-align: center;
     border-radius: 10px;
     padding: 1rem;
+    @media (min-width: 1440px){
+        grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 1;
+        height: 100%;
+    } 
 }
 
 #card1 h1 {
@@ -88,13 +95,19 @@ body {
     background-color: var(--color-white);
     margin: 1.5rem auto;
     width: 100%;
-    max-width: 350px;
+    /*max-width: 350px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     padding: 1rem;
+    @media (min-width: 1440px){
+        grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    height: 100%;
+    } 
 }
 
 #card2 img {
@@ -112,12 +125,18 @@ body {
     background-color: var(--color-yellow-500);
     margin: 1.5rem auto;
     width: 100%;
-    max-width: 350px;
+    /*max-width: 350px;*/
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     padding: 1rem;
     padding-bottom: 0;
+    @media (min-width: 1440px){
+        grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    height: 100%;
+    } 
 }
 
 #card3 h2 {
@@ -138,13 +157,19 @@ body {
     background-color: var(--color-purple-100);
     margin: 1.5rem auto;
     width: 100%;
-    max-width: 350px;
+    /*max-width: 350px;*/
     display: flex;
     flex-direction: column;
     text-align: center;
     border-radius: 10px;
     padding: 1rem;
     padding-bottom: 0;
+    @media (min-width: 1440px){
+        grid-row: span 6 / span 6;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    height: 100%;
+    } 
 }
 
 #card4 h2 {
@@ -166,13 +191,20 @@ body {
     background-color: var(--color-purple-500);
     margin: 1.5rem auto;
     width: 100%;
-    max-width: 350px;
+    /*max-width: 350px;*/
     display: flex;
     flex-direction: column;
     text-align: center;
     border-radius: 10px;
     padding: 1rem;
     padding-bottom: 0;
+    @media (min-width: 1440px){
+        grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 7;
+height: 100%;
+    } 
 }
 
 #card5 h2 {
@@ -196,11 +228,17 @@ body {
     background-color: var(--color-white);
     margin: 1.5rem auto;
     width: 100%;
-    max-width: 350px;
+    /*max-width: 350px;*/
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     padding: 1rem;
+    @media (min-width: 1440px){
+        grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 7;
+    height: 100%;
+    } 
 }
 
 #card6 h2 {
@@ -235,6 +273,10 @@ body {
     flex-direction: column;
     border-radius: 10px;
     padding: 1rem;
+    @media (min-width: 1440px){
+        grid-row: span 4 / span 4;
+        height: 100%;
+    } 
 }
 
 #card7 h2 {
@@ -265,6 +307,12 @@ body {
     flex-direction: column;
     border-radius: 10px;
     padding: 1.25rem;
+    @media (min-width: 1440px){
+        grid-row: span 4 / span 4;
+    grid-column-start: 1;
+    grid-row-start: 5;
+        height: 100%;
+    } 
 }
 
 #card8 h2 {
@@ -279,17 +327,19 @@ body {
     height: auto;
     margin-top: 1rem;
 }
-/*
+
 @media (min-width: 1440px) {
     #cards {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-template-columns: repeat(4, 320px);
+        grid-template-rows: repeat(8, 100px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        
     }
-}*/
+}
 
 /*
 - Mobile: 375px
 - Desktop: 1440px
+- grid template olis 4 pystyä ja 8 riviä, 20px gäppi
 */
